@@ -10,10 +10,10 @@ results = (a *( b - c) + a)
 print(results)
 
 # task 2
-a = 2 + 4
-b = 3 + 7
+exquation1 = 2 + 4
+exquation2 = 3 + 7
 
-if a > b:
-    print('a is larger than b')
+if exquation1 > exquation2:
+    print('exquation1 is larger than exquation2')
 
 
