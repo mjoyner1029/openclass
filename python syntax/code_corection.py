@@ -10,7 +10,7 @@ else:
 def how_was_your_day():
     print("how was your day?")
           
- if how_was_your_day == "happy":
-    print("That's great to hear!")
-if how_was_your_day == "sad":
-    print("I hope your day gets better!")
+    if how_was_your_day == "happy":
+        print("That's great to hear!")
+    elif how_was_your_day == "sad":
+        print("I hope your day gets better!")
