@@ -1,5 +1,4 @@
 # task 1
-
 variable_a = "Hello, World!"
 print(type(variable_a))
 
