@@ -15,5 +15,5 @@ elif place == "cave":
         print("you are lost in the dark")
     elif action2 == "light a torch":
         print("You find a hidden treasure!")
-    else:
-        print("invalid input")
+else:
+    print("invalid input")
