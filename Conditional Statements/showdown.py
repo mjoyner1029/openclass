@@ -1,34 +1,34 @@
 # task 1
-num1 = int(input("please pick a number"))
-num2 = int(input("please pick a second number"))
-num3 = int(input("please pick a third number"))
+first_number = int(input("please pick a number :"))
+second_number = int(input("please pick a second number :"))
+third_number = int(input("please pick a third number :"))
 
-if(num1 >= num2) and (num1 >= num3):
-   largest = num1
-elif(num2 >= num1) and (num2 >= num3):
-   largest = num2
+if(first_number > second_number) and (first_number > third_number):
+   largest = first_number
+elif(second_number > first_number) and (second_number > third_number):
+   largest = second_number
 else:
-   largest = num3
+   largest = third_number
 
 print("The largest number is", largest)
 
-if(num1 <= num2) and (num1 <= num3):
-   smallest = num1
-elif(num2 <= num1) and (num2 <= num3):
-   smallest = num2
-elif(num3 <= num1) and (num3 <= num2):
-   smallest = num3
+if(first_number < second_number) and (first_number < third_number):
+   smallest = first_number
+elif(second_number < first_number) and (second_number < third_number):
+   smallest = second_number
+elif(third_number < first_number) and (third_number < second_number):
+   smallest = third_number
 
 print("The smallest number is", smallest)
 
-if(num1 == num2):
-   equals = num1 and num2
-elif(num2 == num3):
-   equals = num2 and num3
-elif(num3 == num1):
-   equals = num3 and num1
-   print("both numbers are the same",equals)
+if(first_number == second_number):
+   equals = first_number and second_number
+elif(second_number == third_number):
+   equals = second_number and third_number
+elif(third_number == first_number):
+   equals = third_number and first_number
+print("both numbers are the same",equals)
 
-if(num1 == num2 == num3):
-   equals = num3 and num1 and num2
+if(first_number == second_number == third_number):
+   equals = third_number and first_number and second_number
    print("all numbers are the same", equals)
