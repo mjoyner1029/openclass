@@ -6,7 +6,7 @@ print(grades)
 
 # task 2
 def Average(grades): 
-     sum(grades) / len(grades)
+    return sum(grades) / len(grades)
 average = Average(grades) 
 print("Average of the list =", (average))
 
