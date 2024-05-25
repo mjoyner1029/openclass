@@ -25,7 +25,8 @@ print("Please select operation -\n" \
 
 select_choice = int(input('select the operation type 1, 2, 3, 4:'))
 
-
+num1 = int(input('input yout first number: '))
+num2 = int(input('input yout second number: '))
 
 if select_choice == 1:
 	print(num1, "+", num2, "=",
