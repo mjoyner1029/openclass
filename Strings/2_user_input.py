@@ -7,6 +7,7 @@ if 3 <= len(first_name and last_name):
 else:
     print('name is invalid')
 
+
 # task 2
 def password():
 
@@ -42,3 +43,15 @@ def password():
         else:
             password.lower()== password and password.upper()==password and password.isalnum()==password
             print ('password is', strong)
+
+
+# task 3
+email = input('What is your email?: ')
+
+def check(email):
+ 
+    if(re.fullmatch(regex, email)):
+        print("Valid Email")
+ 
+    else:
+        print("Invalid Email")

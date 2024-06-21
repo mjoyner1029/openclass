@@ -1,5 +1,5 @@
 # task 1
-customer_name = input('what is your name?')
+customer_name = input('what is your name? ')
 issue_description = input('what issue are you dealing with? ')
 
 def open_ticket(service_tickets, customer_name, issue_description):
@@ -65,7 +65,3 @@ display_tickets(service_tickets)
 print("\nOpen tickets:")
 display_tickets(service_tickets, filter_status="open")
 
-service_tickets = {
-    "Ticket001": {"Customer": "Alice", "Issue": "Login problem", "Status": "open"},
-    "Ticket002": {"Customer": "Bob", "Issue": "Payment issue", "Status": "closed"}
-}

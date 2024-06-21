@@ -11,12 +11,17 @@ elif user_command == 'issue':
 elif user_command == 'contact support':
     print('Transfering you to one of our support members now')
 else:
-    print("I'm sorry many there is something else i can help with?")
+    print("I'm sorry many there is something else I can help with?")
 
 # task 2
 
 issues = ("login", "performance", "error")
 
-#print('User is dealing with user login issues.')
-#print('User is having proformance issues.')
-#print('User is recieving error message.')
+if user_command == 'issue':
+    print(input(f'what {issues} are you dealing with?("login", "performance", "error") '))
+    if issues == 'login':
+        print('User is dealing with user login issues.')
+    elif issues == 'preformance':
+        print('User is having proformance issues.')
+    elif issues == 'error':
+        print('User is recieving error message.')
