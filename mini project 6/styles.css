@@ -46,3 +46,20 @@ header {
         grid-template-columns: 1fr; /* Stack columns on small screens */
     }
 }
+
+/* Button Styles */
+.button {
+    background-color: #007BFF; /* Initial background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
