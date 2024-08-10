@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Input Form</title>
+</head>
+<body>
+    <h2>Email Input Form</h2>
+    <form>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input Form</title>
+</head>
+<body>
+    <h2>Quantity Input Form</h2>
+    <form>
+        <label for="quantity">Enter Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" min="1" max="100" step="1" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Input Form</title>
+</head>
+<body>
+    <h2>Date Input Form</h2>
+    <form>
+        <label for="date">Select a Date:</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Input Form</title>
+</head>
+<body>
+    <h2>Range Input Form</h2>
+    <form>
+        <label for="range">Select a Value (0-100):</label>
+        <input type="range" id="range" name="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+        <output>50</output>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Input Form</title>
+</head>
+<body>
+    <h2>Color Input Form</h2>
+    <form>
+        <label for="color">Select a Color:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

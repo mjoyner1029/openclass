@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Web Form</title>
+</head>
+<body>
+    <h2>Comprehensive Web Form</h2>
+    <form>
+        <!-- Email Input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <!-- Number Input -->
+        <label for="quantity">Enter Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" min="1" max="100" step="1" required>
+
+        <!-- Date Input -->
+        <label for="date">Select a Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <!-- Range Input -->
+        <label for="range">Select a Value (0-100):</label>
+        <input type="range" id="range" name="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+        <output>50</output>
+
+        <!-- Color Input -->
+        <label for="color">Select a Color:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+
+        <!-- Select Menu -->
+        <label for="language">Favorite Programming Language:</label>
+        <select id="language" name="language" required>
+            <option value="">--Select--</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>Expertise Level:</legend>
+            <label><input type="radio" name="expertise" value="beginner" required> Beginner</label>
+            <label><input type="radio" name="expertise" value="intermediate"> Intermediate</label>
+            <label><input type="radio" name="expertise" value="advanced"> Advanced</label>
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>Preferred Development Platforms:</legend>
+            <label><input type="checkbox" name="platform" value="web"> Web</label>
+            <label><input type="checkbox" name="platform" value="mobile"> Mobile</label>
+            <label><input type="checkbox" name="platform" value="desktop"> Desktop</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

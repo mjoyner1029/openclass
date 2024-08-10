@@ -1,0 +1,48 @@
+/* General styles */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333; /* Dark grey background for header */
+    color: #fff; /* White text color */
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Container for the three columns */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 1rem; /* Space between columns */
+    padding: 1rem;
+}
+
+/* Individual column styling */
+.column {
+    background-color: #1c1c1c; /* Slightly lighter black for contrast */
+    padding: 1rem;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling for headers in columns */
+.column h2 {
+    color: #fff; /* White text for headers */
+}
+
+/* Styling for paragraphs in columns */
+.column p {
+    color: #ccc; /* Light grey text for paragraphs */
+}
+
+/* Optional: Responsive design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+    }
+}
