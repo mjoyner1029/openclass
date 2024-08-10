@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Registration - Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="registration-form">
+            <h2>Register Your Baked Goods</h2>
+            <form action="#" method="POST">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" required placeholder="e.g., Chocolate Cake">
+
+                <label for="purchase-date">Purchase Date:</label>
+                <input type="date" id="purchase-date" name="purchase-date" required>
+
+                <label for="receipt-upload">Upload Receipt:</label>
+                <input type="file" id="receipt-upload" name="receipt-upload" accept=".jpg, .png, .pdf">
+
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" placeholder="List of ingredients"></textarea>
+
+                <h3>Your Information</h3>
+                <label for="user-name">Name:</label>
+                <input type="text" id="user-name" name="user-name" required placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email Address">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions.</label>
+                </div>
+
+                <button type="submit">Register Now</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Our Bakery. All rights reserved.</p>
+        <ul>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
