@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header {
+            background-image: url('https://source.unsplash.com/1600x900/?technology');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .service-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        .footer .social-links a {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Welcome to Tech Solutions</h1>
+        <p>Your partner in innovative technology solutions</p>
+    </header>
+
+    <!-- Services Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/100" alt="Service 1">
+                    <h5>Service One</h5>
+                    <p>Comprehensive tech support to ensure your systems run smoothly.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/100" alt="Service 2">
+                    <h5>Service Two</h5>
+                    <p>Custom software development tailored to your business needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/100" alt="Service 3">
+                    <h5>Service Three</h5>
+                    <p>Data analytics solutions to help you make informed decisions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="service">Select a Service</label>
+                <select class="form-control" id="service" required>
+                    <option value="">Choose...</option>
+                    <option>Service One</option>
+                    <option>Service Two</option>
+                    <option>Service Three</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- About Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <h5>Our Mission</h5>
+                <p>To provide innovative technology solutions that empower businesses to achieve their goals.</p>
+                <p>We are committed to delivering high-quality services with a focus on customer satisfaction.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@techsolutions.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-4 social-links">
+                    <h5>Follow Us</h5>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter Signup</h5>
+                    <form>
+                        <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
