@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tech Solutions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Custom styles */
+    .header {
+      background-image: url('images/tech.png'); /* Correcting the image path */
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .service-card {
+      margin: 20px 0;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .table-custom {
+      background-color: #f2f2f2; /* Custom table background color */
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tech Solutions</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header">
+    <h1 class="display-4">Welcome to Tech Solutions</h1>
+    <p class="lead">Your partner in technology innovation</p>
+  </div>
+
+  <div class="container my-5">
+    <h2 class="text-center" id="services">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4 service-card">
+        <div class="card">
+          <img src="images/support.png" class="card-img-top img-fluid" alt="Service 1">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Tech Support</h5>
+            <p class="card-text">Tech support provides assistance with technology-related issues, ensuring devices function properly. Services include troubleshooting, installations, software updates, customer inquiries, and user training for optimal performance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 service-card">
+        <div class="card">
+          <img src="images/hardware.png" class="card-img-top img-fluid" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Hardware Solutions</h5>
+            <p class="card-text">Computer hardware solutions involve designing, assembling, and maintaining physical components like CPUs, GPUs, motherboards, storage, and peripherals, enhancing performance, reliability, and user experience in technology.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 service-card">
+        <div class="card">
+          <img src="images/cloud.png" class="card-img-top img-fluid" alt="Service 3">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Cloud Solutions</h5>
+            <p class="card-text">Computer cloud solutions provide scalable, on-demand access to computing resources and storage over the internet, enabling collaboration, data backup, and enhanced security for businesses and users.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adding a responsive table -->
+    <h2 class="text-center my-5">Service Comparison</h2>
+    <table class="table table-striped table-hover table-custom">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Service</th>
+          <th scope="col">Description</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tech Support</td>
+          <td>Assistance with technology-related issues.</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Hardware Solutions</td>
+          <td>Designing and assembling hardware components.</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Cloud Solutions</td>
+          <td>Access to scalable computing resources online.</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container my-5">
+    <h2 class="text-center" id="contact">Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="service">Select a Service:</label>
+        <select class="form-control" id="service" required>
+          <option value="">Choose...</option>
+          <option value="Tech Support">Tech Support</option>
+          <option value="Hardware Solutions">Hardware Solutions</option>
+          <option value="Cloud Solutions">Cloud Solutions</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2024 Tech Solutions | <a href="#" class="text-primary">Privacy Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
