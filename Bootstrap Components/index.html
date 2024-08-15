@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tech Solutions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Custom styles */
+    .header {
+      background-image: url('images/tech.png'); /* Fixed the background-image syntax */
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .service-card {
+      margin: 20px 0;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Updated NavBar -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tech Solutions</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header">
+    <h1>Welcome to Tech Solutions</h1>
+    <p>Your partner in technology innovation</p>
+  </div>
+
+  <div class="container my-5">
+    <h2 class="text-center" id="services">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4 service-card">
+        <div class="card">
+          <img src="images/support.png" class="card-img-top" alt="Service 1">
+          <div class="card-body">
+            <h5 class="card-title">Tech Support</h5>
+            <p class="card-text">Tech support provides assistance with technology-related issues, ensuring devices function properly. 
+              Services include troubleshooting, installations, software updates, customer inquiries, and user training for optimal performance.</p>
+            <button type="button" class="btn btn-primary">Learn More</button> <!-- Added Bootstrap button -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 service-card">
+        <div class="card">
+          <img src="images/hardware.png" class="card-img-top" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title">Hardware Solutions</h5>
+            <p class="card-text">Computer hardware solutions involve designing, assembling, and maintaining physical components like CPUs, GPUs, motherboards, 
+              storage, and peripherals, enhancing performance, reliability, and user experience in technology.</p>
+            <button type="button" class="btn btn-primary">Learn More</button> <!-- Added Bootstrap button -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 service-card">
+        <div class="card">
+          <img src="images/cloud.png" class="card-img-top" alt="Service 3">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Solutions</h5>
+            <p class="card-text">Computer cloud solutions provide scalable, on-demand access to computing resources and storage over the internet, enabling collaboration, 
+              data backup, and enhanced security for businesses and users.</p>
+            <button type="button" class="btn btn-primary">Learn More</button> <!-- Added Bootstrap button -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h2 class="text-center" id="contact">Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="service">Select a Service:</label>
+        <select class="form-control" id="service" required>
+          <option value="">Choose...</option>
+          <option value="Service 1">Service 1</option>
+          <option value="Service 2">Service 2</option>
+          <option value="Service 3">Service 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2024 Tech Solutions | <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
